@@ -277,7 +277,7 @@ r_squared <- summary(model)$r.squared
 
 
 # Create the plot of 2023 v 2024
-ggplot(data = TwentyThree_AND_TwentyFour, aes(x = Actual_K_Minus_BB_pct_2023, y = Actual_K_Minus_BB_pct_2024)) +
+my_plot_new <- ggplot(data = TwentyThree_AND_TwentyFour, aes(x = Actual_K_Minus_BB_pct_2023, y = Actual_K_Minus_BB_pct_2024)) +
   geom_point() +
   geom_smooth(method = "lm") +
   labs(
